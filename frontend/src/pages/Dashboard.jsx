@@ -29,27 +29,27 @@ export default function Dashboard() {
         <SummaryCard
           title="Total Income"
           value={formatCurrency(summary?.totalIncome || 0)}
-          icon="💰"
+          
           color="green"
           subtitle={`${summary?.incomeCount || 0} transactions`}
         />
         <SummaryCard
           title="Total Expenses"
           value={formatCurrency(summary?.totalExpense || 0)}
-          icon="💸"
+          
           color="red"
           subtitle={`${summary?.expenseCount || 0} transactions`}
         />
         <SummaryCard
           title="Net Balance"
           value={formatCurrency(summary?.netBalance || 0)}
-          icon={summary?.netBalance >= 0 ? '📈' : '📉'}
+          
           color={summary?.netBalance >= 0 ? 'blue' : 'red'}
         />
         <SummaryCard
           title="Transactions"
           value={summary?.transactionCount || 0}
-          icon="📋"
+          
           color="purple"
           subtitle="Total recorded"
         />

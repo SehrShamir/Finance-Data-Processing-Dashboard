@@ -3,9 +3,9 @@ import { useAuth } from '../../auth/AuthContext';
 import { ROLES } from '../../utils/constants';
 
 const navItems = [
-  { to: '/dashboard', label: 'Dashboard', icon: '📊', roles: null },
-  { to: '/transactions', label: 'Transactions', icon: '💳', roles: null },
-  { to: '/users', label: 'Users', icon: '👥', roles: [ROLES.ADMIN] },
+  { to: '/dashboard', label: 'Dashboard', roles: null },
+  { to: '/transactions', label: 'Transactions', roles: null },
+  { to: '/users', label: 'Users',  roles: [ROLES.ADMIN] },
 ];
 
 export default function Sidebar() {
