@@ -13,7 +13,8 @@
     "db:reset": "npm run migrate:undo && npm run migrate && npm run seed"
   },
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "16": "^0.0.2",
+    "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
     "dayjs": "^1.11.11",
     "dotenv": "^16.4.5",
